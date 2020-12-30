@@ -42,9 +42,11 @@ public class Login extends javax.swing.JFrame {
         setUndecorated(true);
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 0, 255));
         jLabel1.setText("Username");
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 0, 255));
         jLabel2.setText("Password");
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -60,6 +62,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jCheckBox1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jCheckBox1.setForeground(new java.awt.Color(255, 0, 255));
         jCheckBox1.setText("Show password");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,6 +71,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jButton1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 0, 255));
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,6 +80,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 0, 255));
         jButton2.setText("Close");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,6 +89,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 0, 255));
         jLabel3.setText("LOGIN SYSTEM");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -146,7 +152,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        // to login someone need to give the following username and password.
         if(jTextField1.getText().equals("kamrul") && jPasswordField1.getText().equals("Anisahmed")){
             setVisible(false);
             new Home().setVisible(true);
@@ -158,7 +164,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        // if someone wants to close this application
         int a=JOptionPane.showConfirmDialog(null,"DO you want to close this application","Select",JOptionPane.YES_NO_OPTION);
         if(a==0){
             System.exit(0);
