@@ -305,6 +305,7 @@ public class AddNewProduct extends javax.swing.JFrame {
             ResultSet getProductID = statement.executeQuery("select max(productID) from AddNewProduct");
             if(getProductID.next())   {
                 int productID = getProductID.getInt(1);
+                productID = productID +1;
                 String setID = String.valueOf(productID);
                 jLabel4.setText(setID);
             }
@@ -423,7 +424,7 @@ public class AddNewProduct extends javax.swing.JFrame {
             new AddNewProduct().setVisible(true);
         }
         catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Buyer exists with the given mobile number!!!");
+            JOptionPane.showMessageDialog(null, e);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
