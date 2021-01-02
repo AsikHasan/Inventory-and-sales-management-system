@@ -344,7 +344,10 @@ public class AddNewProduct extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2FocusGained
 
     private void jTextField2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusLost
-        // TODO add your handling code here:
+        if (jTextField2.getText().equals("Enter H.S code")) {
+            jTextField2.setText("");
+            jTextField2.setForeground(new Color(153,153,153));
+        }
     }//GEN-LAST:event_jTextField2FocusLost
 
     private void jTextField3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField3FocusGained
@@ -357,7 +360,7 @@ public class AddNewProduct extends javax.swing.JFrame {
     private void jTextField3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField3FocusLost
         if (jTextField3.getText().equals("")) {
             jTextField3.setText("Enter H.S code");
-            jTextField3.setForeground(new Color(0,0,0));
+            jTextField3.setForeground(new Color(153,153,153));
         }
     }//GEN-LAST:event_jTextField3FocusLost
 
@@ -371,7 +374,7 @@ public class AddNewProduct extends javax.swing.JFrame {
     private void jTextField4FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField4FocusLost
         if (jTextField4.getText().equals("")) {
             jTextField4.setText("Enter the price");
-            jTextField4.setForeground(new Color(0,0,0));
+            jTextField4.setForeground(new Color(153,153,153));
         }
     }//GEN-LAST:event_jTextField4FocusLost
 
@@ -385,7 +388,7 @@ public class AddNewProduct extends javax.swing.JFrame {
     private void jTextField5FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField5FocusLost
         if (jTextField5.getText().equals("")) {
             jTextField5.setText("Enter origin of product");
-            jTextField5.setForeground(new Color(0,0,0));
+            jTextField5.setForeground(new Color(153,153,153));
         }
     }//GEN-LAST:event_jTextField5FocusLost
 
@@ -399,7 +402,7 @@ public class AddNewProduct extends javax.swing.JFrame {
     private void jTextField6FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField6FocusLost
         if (jTextField6.getText().equals("")) {
             jTextField6.setText("Enter the quantity");
-            jTextField6.setForeground(new Color(0,0,0));
+            jTextField6.setForeground(new Color(153,153,153));
         }
     }//GEN-LAST:event_jTextField6FocusLost
 
