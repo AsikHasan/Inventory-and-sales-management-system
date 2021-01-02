@@ -344,8 +344,8 @@ public class AddNewProduct extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2FocusGained
 
     private void jTextField2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusLost
-        if (jTextField2.getText().equals("Enter H.S code")) {
-            jTextField2.setText("");
+        if (jTextField2.getText().equals("")) {
+            jTextField2.setText("Enter product name");
             jTextField2.setForeground(new Color(153,153,153));
         }
     }//GEN-LAST:event_jTextField2FocusLost
