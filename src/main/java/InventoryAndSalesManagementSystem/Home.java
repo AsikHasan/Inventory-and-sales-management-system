@@ -121,6 +121,11 @@ public class Home extends javax.swing.JFrame {
         jButton9.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jButton9.setForeground(new java.awt.Color(204, 0, 204));
         jButton9.setText("Billing System");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton10.setBackground(new java.awt.Color(204, 204, 204));
         jButton10.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
@@ -263,6 +268,10 @@ public class Home extends javax.swing.JFrame {
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         new DeleteProduct().setVisible(true);
     }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        new BillingSystem().setVisible(true);
+    }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
      * @param args the command line arguments
