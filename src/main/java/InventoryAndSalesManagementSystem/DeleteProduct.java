@@ -287,7 +287,7 @@ public class DeleteProduct extends javax.swing.JFrame {
         try {
             Connection connection = ConnectionProvider.getCon();
             Statement statement = connection.createStatement();
-            ResultSet getDatabaseInfo = statement.executeQuery("select * from AddNewProduct where productName='"+productName+"'");
+            ResultSet getDatabaseInfo = statement.executeQuery("select * from AddNewProduct where productName like'"+productName+"%'");
             if (getDatabaseInfo.next()) {
                 jTextField2.setText(getDatabaseInfo.getString(2));
                 jTextField3.setText(getDatabaseInfo.getString(3));
